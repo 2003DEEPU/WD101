@@ -1,65 +1,100 @@
-body{
-    padding: 0%;
-    margin: 0%;
-    background: linear-gradient(120deg,#88c330,#b032d7);
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #f9d423, #e65c00);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
-.center{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    width: 400px;
-    height: 350px;
-    border-radius: 2mm;
-    box-shadow: 0px 4px 4px teal;
 
+.center {
+    background-color: #f5f5f5;
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .center h2 {
-    font-family: Algerian; 
-    color: #5860d2;
+    font-family: 'Montserrat', sans-serif;
+    color: #e65c00;
     text-align: center;
-    border-bottom: 1px solid teal;
-    padding: 10px 10%;
+    border-bottom: 2px solid #e65c00;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
+
 .center form {
-    padding: 0 40px;
     box-sizing: border-box;
 }
-form .textfield{
+
+.textfield {
     position: relative;
-    border-bottom: 2px solid teal;
+    margin-bottom: 20px;
 }
- 
-.textfield input{
+
+.textfield input {
     width: 100%;
-    padding: 5px 0% ;
-    border: 0ch;
+    padding: 12px;
+    border: 0;
+    border-bottom: 2px solid #e65c00;
+    outline: none;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    border-radius: 4px;
 }
-.submit_button{
+
+.submit_button {
     width: 100%;
-    height: 30px;
-    background: linear-gradient(120deg,#3086c3,#32d737);
-    border-radius: 2mm;
+    height: 40px;
+    background: linear-gradient(135deg, #f9d423, #e65c00);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.textfields{
-    padding: 5px 0%;
+
+.entries {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
-.entries{
-    margin-top: 50px;
-    position: relative;
-    width: 500px;
-    background-color: white;
-    box-shadow: 0px 4px 4px teal;
-    border-radius: 2mm;
-}
-.entries h2{
+
+.entries h2 {
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #e65c00;
+    margin-bottom: 20px;
+    color: #e65c00;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
     border-bottom: 1px solid teal;
 }
-.table td,th{
-    padding-left: 20px;
-    
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        width: 90%;
+    }
 }
